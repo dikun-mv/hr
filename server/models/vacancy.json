@@ -1,0 +1,35 @@
+{
+  "name": "Vacancy",
+  "plural": "Vacancies",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "opened": {
+      "type": "date",
+      "default": "$now"
+    },
+    "skills": {
+      "type": ["string"],
+      "required": true
+    },
+    "closed": {
+      "type": "date",
+      "required":false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
